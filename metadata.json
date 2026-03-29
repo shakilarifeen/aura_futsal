@@ -1,0 +1,5 @@
+{
+  "name": "Aura Futsal",
+  "description": "Elite futsal facility website with interactive bookings and kinetic design.",
+  "requestFramePermissions": ["geolocation"]
+}

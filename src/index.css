@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0e0e0e;
+  --color-primary: #8eff71;
+  --color-primary-glow: rgba(142, 255, 113, 0.4);
+  --color-surface: #1a1a1a;
+  --color-surface-high: #262626;
+  --color-on-surface-variant: #adaaaa;
+  
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white font-body;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-headline;
+  }
+}
+
+@layer utilities {
+  .aura-glow {
+    text-shadow: 0 0 20px var(--color-primary-glow);
+  }
+  
+  .aura-box-glow {
+    box-shadow: 0 0 30px rgba(142, 255, 113, 0.15);
+  }
+
+  .kinetic-gradient {
+    background: linear-gradient(135deg, #8eff71 0%, #2ff801 100%);
+  }
+}
+
+/* Custom scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8eff71;
+}
