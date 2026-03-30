@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/aura_futsal">
       <div className="min-h-screen bg-background text-white selection:bg-primary selection:text-black">
         <Navbar />
         <Routes>
