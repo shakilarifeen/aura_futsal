@@ -18,3 +18,7 @@ View your app in AI Studio: https://ai.studio/apps/b86500f3-f8b1-483e-8de3-71d05
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+
+## Browser Link
+Click [here](https://shakilarifeen.github.io/aura_futsal/) to access website.
