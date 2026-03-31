@@ -48,9 +48,6 @@ export default function Home() {
               BOOK YOUR PITCH
               <ArrowRight className="w-6 h-6" />
             </Link>
-            <button className="border border-white/20 bg-white/5 backdrop-blur-md text-white font-headline font-bold text-xl px-10 py-5 rounded-md hover:bg-white/10 transition-all duration-300">
-              VIEW LEAGUES
-            </button>
           </motion.div>
         </div>
 
