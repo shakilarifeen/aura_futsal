@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // Changed this to be safer
 import { ArrowRight, LayoutGrid, Sun, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -32,7 +32,8 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="font-headline text-7xl md:text-9xl font-black tracking-tighter leading-[0.9] mb-8 aura-glow"
           >
-            FIND YOUR<br /><span className="text-primary italic">AURA.</span>
+            FIND YOUR<br />{/* Fixed tag below */}
+            <span className="text-primary italic">AURA.</span><br />
           </motion.h1>
           
           <motion.div 
@@ -100,7 +101,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div 
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.02 }}Check
             className="md:col-span-5 bg-surface rounded-xl p-8 relative overflow-hidden group border border-white/5 min-h-[400px]"
           >
             <div className="relative z-10 h-full flex flex-col justify-between">
